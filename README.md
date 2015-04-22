@@ -39,7 +39,8 @@ Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stampla
 
 * Enable Github signup for users
 	* Create a Github app [https://github.com/settings/applications](https://github.com/settings/applications)
-	* Fill the "Authorized Redirect URIs" with this URL **https://[YOURAPPID].stamplayapp.com/auth/v0/github/callback**
+	* Fill the "Authorized Redirect URIs" with this URL **https://[YOUR_STAMPLAY_APP_ID].stamplayapp.com/auth/v0/github/callback**
+	* Get back in Stamplay and go on User -> Authentication, click on Github icon and cut and paste ```YOUR_GITHUB_CLIENT_ID``` and ```YOUR_GITHUB_APP_SECRET```
 * Install stamplay command line tool ```npm install -g stamplay cli```
 * Init the project and copy all the frontend assets from this project
 * Open app.js, find the Stamplay JS SDK initialization and edit it so that it works with your app
@@ -53,7 +54,7 @@ Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stampla
 * Name: `avatar`, Type: `string`, required, the question’s body
 * Name: `username`, Type: `string`, required, the question’s body
 
-After completing this Stamplay will instantly expose REST APIs for our new resources at this URL: `https://APPID.stamplayapp.com/api/cobject/v0/message`
+After completing this Stamplay will instantly expose REST APIs for our new resources at this URL: `https://YOUR_STAMPLAY_APP_ID.stamplayapp.com/api/cobject/v0/message`
 
 * Create a new Message via API with the following data:  {comment:"speedhack rocks", avatar:"https://speedhack.stamplayapp.com/img/logo-robot.jpg", username:"speedhack"}
 
@@ -62,7 +63,7 @@ After completing this Stamplay will instantly expose REST APIs for our new resou
 ## 4. Add realtime update connecting Pusher
 
 * Go on [Pusher](https://app.pusher.com/accounts/sign_in), login (user: speedhack@stamplay.com pwd:1234567890) and create a new app for your team
-* On Stamplay add Pusher component and configure it with copying and pasting the app_id, key, secret from your Pusher app
+* On Stamplay add Pusher component and configure it with copying and pasting the ```YOUR_PUSHER_APP_ID```, ```YOUR_PUSHER_APP_KEY```, ```YOUR_PUSHER_APP_SECRET``` from your Pusher app
 * Create a task that sends a realtime notification with pusher every time a new message is created
 
 ```	
@@ -75,7 +76,7 @@ After completing this Stamplay will instantly expose REST APIs for our new resou
 			dt_create | {{coinstance.dt_create}}
 ```
 
-* Open app.js and setup pusher to work with your app
+* Open app.js and setup ```new Pusher('YOUR_PUSHER_APP_ID')``` to work with your app
 * Deploy again your frontend
 * Check if you're UI is updating in realtime after a new message get published
 
