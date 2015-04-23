@@ -48,7 +48,9 @@ Here is what you will get: [https://speedhack.stamplayapp.com](https://speedhack
 
 
 -----------------------
-## 3. Using custom objects define the data model **Message** defined as follows:
+## 3. Using custom objects 
+
+Go into the components section, add Custom object and define the object **Message** as follows:
 
 * Name: `comment`, Type: `string`, required, the question’s title
 * Name: `avatar`, Type: `string`, required, the question’s body
@@ -56,7 +58,14 @@ Here is what you will get: [https://speedhack.stamplayapp.com](https://speedhack
 
 After completing this Stamplay will instantly expose REST APIs for our new resources at this URL: `https://YOUR_STAMPLAY_APP_ID.stamplayapp.com/api/cobject/v0/message`
 
-* Create a new Message via API with the following data:  {comment:"speedhack rocks", avatar:"https://speedhack.stamplayapp.com/img/logo-robot.jpg", username:"speedhack"}
+* Create a new Message via API with the following data:  
+```
+{
+    comment:"speedhack rocks", 
+    avatar:"https://speedhack.stamplayapp.com/img/logo-robot.jpg", 
+    username:"speedhack"
+}
+```
 
 
 -----------------------
