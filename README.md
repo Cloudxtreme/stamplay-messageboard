@@ -1,5 +1,5 @@
 # Speedhack-realtime-message-board
-A realtime message board powered by Stamplay for [http://speedhack.io](speedhack.io)
+A realtime message board powered by Stamplay for [http://speedhack.io](http://speedhack.io)
 
 ![Speedhack](https://speedhack.stamplayapp.com/img/email_header.png "Speedhack")
 
@@ -12,7 +12,7 @@ Expected outcome:
 At [Stamplay](https://stamplay.com) we love events where the hacker ethos of developers spread all over the place. This events cultivate communities where aspiring hackers have the opportunity to learn, build, and share their creations with the world. This is a realtime message board built with Stamplay and Pusher with client-side only code.
 
 In this app users can signup with Github and leave a message on the board that gets updated in realtime. 
-Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stamplayapp.com)
+Here is what you will get: [https://speedhack.stamplayapp.com](https://speedhack.stamplayapp.com)
 
 -----------------------
 ## Requirements / Resources
@@ -20,7 +20,7 @@ Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stampla
 * Sign up for a [free account](http://editor.stamplay.com/apps) on Stamplay.
 * A Github account
 * NPM installed
-* Stamplay [https://stamplay.com/docs/rest-api](REST API Reference)
+* Stamplay [REST API Reference](https://stamplay.com/docs/rest-api)
 
 -----------------------
 ## 1. When a user signup, send him a welcome email
@@ -41,7 +41,7 @@ Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stampla
 	* Create a Github app [https://github.com/settings/applications](https://github.com/settings/applications)
 	* Fill the "Authorized Redirect URIs" with this URL **https://[YOUR_STAMPLAY_APP_ID].stamplayapp.com/auth/v0/github/callback**
 	* Get back in Stamplay and go on User -> Authentication, click on Github icon and cut and paste ```YOUR_GITHUB_CLIENT_ID``` and ```YOUR_GITHUB_APP_SECRET```
-* Install stamplay command line tool ```npm install -g stamplay cli```
+* Install stamplay command line tool ```npm install -g stamplay-cli```
 * Init the project and copy all the frontend assets from this project
 * Open app.js, find the Stamplay JS SDK initialization and edit it so that it works with your app
 * Deploy frontend with Stamplay command line tool [https://stamplay.com/docs/hosting](https://stamplay.com/docs/hosting)
