@@ -85,7 +85,7 @@ After completing this Stamplay will instantly expose REST APIs for our new resou
 			dt_create | {{coinstance.dt_create}}
 ```
 
-* Open app.js and setup ```new Pusher('YOUR_PUSHER_APP_ID')``` to work with your app
+* Open app.js and setup ```new Pusher('YOUR_PUSHER_APP_KEY')``` to work with your app
 * Deploy again your frontend
 * Check if you're UI is updating in realtime after a new message get published
 
