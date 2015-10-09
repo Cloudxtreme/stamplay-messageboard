@@ -1,5 +1,7 @@
 ##Building A Realtime Message Board with Stamplay and Pusher
 
+<a href="http://stamplaymsgboard.stamplayapp.com">Example App</a>
+
 We will use the Stamplay platform to build a fully featured realtime message board. In this tutorial we will :
 
  - Send a welcome email when a user signs up.
