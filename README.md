@@ -18,4 +18,4 @@ To get started, make sure you have the following. Don't worry they all have a fr
 Alright! Lets build our realtime message board!
 
 For the full tutorial check out the full post on our blog <a href="https://blog.stamplay.com/
-build-a-realtime-message-board-with-stamplay-pusher">here</a>
+build-a-realtime-message-board-with-stamplay-pusher">here</a>.
