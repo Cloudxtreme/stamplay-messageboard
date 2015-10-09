@@ -1,8 +1,5 @@
-setTimeout(function() {
-    $("#title").addClass("animated bounce");
-}, 3000)
 // Initialize Your Stamplay App With Your App Id
-Stamplay.init("stamplaymsgboard");
+Stamplay.init("YOUR_APP_ID");
 
 // Create an instance of the Stamplay User Model
 var user = new Stamplay.User().Model;
@@ -69,7 +66,7 @@ var feed = new Stamplay.Cobject('message').Collection;
 });
 
 // Create a Pusher Instance
-var pusher = new Pusher('9540fd497bb2120865f3');
+var pusher = new Pusher('YOUR_CLIENT_ID');
 // Listen to a channel
 var channel = pusher.subscribe('public');
 
